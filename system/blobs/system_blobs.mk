@@ -21,4 +21,9 @@ PRODUCT_PACKAGES += \
     privapp-permissions-google
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/privapp-permissions-google.xml
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/app/GoogleExtShared/GoogleExtShared.apk \
+    system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk \
+    system/priv-app/TagGoogle/TagGoogle.apk
