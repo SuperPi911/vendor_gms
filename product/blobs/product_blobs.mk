@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     default-permissions_com.google.ambient.streaming \
     default-permissions_crossdeviceaccessservice \
     default-permissions_customizationbundle \
-    default-permissions_nowplaying \
     default-permissions_pixelsupport \
     default-permissions_pixelweather \
     default-permissions_talkback \
@@ -30,7 +29,6 @@ PRODUCT_PACKAGES += \
     default-permissions-com.google.android.apps.pixel.agent \
     default-permissions-com.google.android.apps.pixel.psi \
     default-permissions-safetyhub \
-    default-permissions-stargate \
     default-permissions-verifier \
     default_permissions_allowlist
 
