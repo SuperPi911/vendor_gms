@@ -462,14 +462,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "satellite_sos",
-    product_specific: true,
-    sub_dir: "sysconfig",
-    src: "satellite_sos.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
     name: "spoon",
     product_specific: true,
     sub_dir: "sysconfig",

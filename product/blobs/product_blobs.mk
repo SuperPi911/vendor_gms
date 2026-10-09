@@ -40,8 +40,6 @@ PRODUCT_PACKAGES += \
     com.google.android.apps.dreamliner \
     com.google.android.apps.pixel.familyspace \
     com.google.android.apps.setupwizard.searchselector \
-    com.google.android.apps.stargate.support \
-    com.google.android.apps.stargate \
     com.google.android.odad \
     com.google.android.verifier \
     privapp-permissions-glasses-core \
@@ -101,7 +99,6 @@ PRODUCT_PACKAGES += \
     preinstalled-packages-product-pixel-2025-and-newer \
     preinstalled-packages-product-pixel-2026-and-newer \
     preinstalled_packages_repair_mode \
-    satellite_sos \
     spoon
 
 ifneq ($(filter oriole raven panther cheetah lynx tangorpro felix shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)

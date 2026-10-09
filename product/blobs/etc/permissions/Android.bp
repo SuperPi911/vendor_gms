@@ -63,22 +63,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "com.google.android.apps.stargate.support",
-    product_specific: true,
-    sub_dir: "permissions",
-    src: "com.google.android.apps.stargate.support.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
-    name: "com.google.android.apps.stargate",
-    product_specific: true,
-    sub_dir: "permissions",
-    src: "com.google.android.apps.stargate.xml",
-    filename_from_src: true,
-}
-
-prebuilt_etc {
     name: "com.google.android.dialer.support",
     product_specific: true,
     sub_dir: "permissions",
