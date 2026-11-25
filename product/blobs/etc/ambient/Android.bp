@@ -14,10 +14,6 @@
 // limitations under the License.
 //
 
-prebuilt_etc {
-    name: "matcher_tah",
-    product_specific: true,
-    sub_dir: "ambient",
-    src: "matcher_tah.leveldb",
-    filename_from_src: true,
-}
+// The device vendor blobs already install product/etc/ambient/matcher_tah.leveldb.
+// Installing this GMS copy as well produces duplicate commands for the same path,
+// so keep the file out of the build (AmbientStreaming uses the vendor copy).
