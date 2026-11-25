@@ -64,16 +64,26 @@ PRODUCT_PACKAGES += \
     game_service \
     gemini_experience \
     gemini_intelligence_device \
+    google_build \
     google_fi \
     google_xr_projected \
+    google-hiddenapi-package-whitelist \
     google-initial-package-stopped-states \
     google-install-constraints-package-allowlist \
     google-staged-installer-whitelist \
     google-system-apps-update-ownership \
     google \
+    nexus \
     nga \
     nowplaying \
     pixel_2017-initial-package-stopped-states \
+    pixel_experience_2017 \
+    pixel_experience_2018 \
+    pixel_experience_2019_midyear \
+    pixel_experience_2019 \
+    pixel_experience_2020_midyear \
+    pixel_experience_2020 \
+    pixel_experience_2021_midyear \
     preinstalled_packages_pixel_experience_2017_and_newer \
     preinstalled_packages_pixel_experience_2021_and_newer \
     preinstalled-packages-glasses-core-pixel-common \
@@ -92,6 +102,45 @@ PRODUCT_PACKAGES += \
     preinstalled_packages_repair_mode \
     spoon
 
+ifneq ($(filter oriole raven panther cheetah lynx tangorpro felix shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2021
+endif
+
+ifeq ($(TARGET_INCLUDE_MOSEY),true)
+PRODUCT_PACKAGES += \
+    pixel_experience_2021
+endif
+
+ifneq ($(filter bluejay panther cheetah lynx tangorpro felix shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2022_midyear
+endif
+
+ifneq ($(filter panther cheetah lynx tangorpro felix shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2022
+endif
+
+ifneq ($(filter lynx felix shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2023_midyear
+endif
+
+ifneq ($(filter shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2023
+endif
+
+ifneq ($(filter akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2024_midyear
+endif
+
+ifneq ($(filter tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
+PRODUCT_PACKAGES += \
+    pixel_experience_2024
+endif
 
 ifneq ($(filter tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
 PRODUCT_PACKAGES += \
