@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     default-permissions_com.google.ambient.streaming \
     default-permissions_crossdeviceaccessservice \
     default-permissions_customizationbundle \
-    default-permissions_nowplaying \
     default-permissions_pixelsupport \
     default-permissions_pixelweather \
     default-permissions_talkback \
@@ -30,7 +29,6 @@ PRODUCT_PACKAGES += \
     default-permissions-com.google.android.apps.pixel.agent \
     default-permissions-com.google.android.apps.pixel.psi \
     default-permissions-safetyhub \
-    default-permissions-stargate \
     default-permissions-verifier \
     default_permissions_allowlist
 
@@ -42,8 +40,6 @@ PRODUCT_PACKAGES += \
     com.google.android.apps.dreamliner \
     com.google.android.apps.pixel.familyspace \
     com.google.android.apps.setupwizard.searchselector \
-    com.google.android.apps.stargate.support \
-    com.google.android.apps.stargate \
     com.google.android.odad \
     com.google.android.verifier \
     privapp-permissions-glasses-core \
@@ -80,7 +76,6 @@ PRODUCT_PACKAGES += \
     nexus \
     nga \
     nowplaying \
-    nowplaying_app_26q1 \
     pixel_2017-initial-package-stopped-states \
     pixel_experience_2017 \
     pixel_experience_2018 \
@@ -105,23 +100,16 @@ PRODUCT_PACKAGES += \
     preinstalled-packages-product-pixel-2025-and-newer \
     preinstalled-packages-product-pixel-2026-and-newer \
     preinstalled_packages_repair_mode \
-    satellite_sos \
     spoon
 
-# Six GMS configs above are also copied by device vendor blobs; keep them enabled in Soong
-# (tegu needs all but two) and skip the GMS copies only where the vendor already provides them.
-ifeq ($(filter tegu,$(LINEAGE_BUILD)),)
-PRODUCT_PACKAGES := $(filter-out \
+# These four GMS configs are duplicated by the Pixel 9 family vendor blobs but not by tegu.
+# Add them back only for tegu; the two configs duplicated on every device above are never added.
+ifeq ($(LINEAGE_BUILD),tegu)
+PRODUCT_PACKAGES += \
     com.google.android.apps.stargate \
     com.google.android.apps.stargate.support \
     default-permissions-stargate \
-    default-permissions_nowplaying \
-    nowplaying_app_26q1 \
-    satellite_sos,$(PRODUCT_PACKAGES))
-else
-PRODUCT_PACKAGES := $(filter-out \
-    default-permissions_nowplaying \
-    nowplaying_app_26q1,$(PRODUCT_PACKAGES))
+    satellite_sos
 endif
 
 ifneq ($(filter oriole raven panther cheetah lynx tangorpro felix shiba husky akita tokay caiman komodo comet tegu frankel blazer mustang rango stallion cubs grizzly kodiak yogi, $(LINEAGE_BUILD)),)
