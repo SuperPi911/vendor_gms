@@ -96,6 +96,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "google_build",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "google_build.xml",
@@ -120,6 +121,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "google-hiddenapi-package-whitelist",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "google-hiddenapi-package-whitelist.xml",
@@ -168,6 +170,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "nexus",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "nexus.xml",
@@ -192,6 +195,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "nowplaying_app_26q1",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "nowplaying_app_26q1.xml",
@@ -208,6 +212,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2017",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2017.xml",
@@ -216,6 +221,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2018",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2018.xml",
@@ -224,6 +230,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2019_midyear",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2019_midyear.xml",
@@ -232,6 +239,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2019",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2019.xml",
@@ -240,6 +248,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2020_midyear",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2020_midyear.xml",
@@ -248,6 +257,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2020",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2020.xml",
@@ -256,6 +266,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2021_midyear",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2021_midyear.xml",
@@ -264,6 +275,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2021",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2021.xml",
@@ -272,6 +284,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2022_midyear",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2022_midyear.xml",
@@ -280,6 +293,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2022",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2022.xml",
@@ -288,6 +302,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2023_midyear",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2023_midyear.xml",
@@ -296,6 +311,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2023",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2023.xml",
@@ -304,6 +320,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2024_midyear",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2024_midyear.xml",
@@ -312,6 +329,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "pixel_experience_2024",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "pixel_experience_2024.xml",
@@ -479,6 +497,7 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "satellite_sos",
+    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "satellite_sos.xml",
