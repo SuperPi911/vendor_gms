@@ -64,7 +64,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "com.google.android.apps.stargate.support",
-    enabled: false,
     product_specific: true,
     sub_dir: "permissions",
     src: "com.google.android.apps.stargate.support.xml",
@@ -73,7 +72,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "com.google.android.apps.stargate",
-    enabled: false,
     product_specific: true,
     sub_dir: "permissions",
     src: "com.google.android.apps.stargate.xml",

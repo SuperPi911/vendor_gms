@@ -192,7 +192,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "nowplaying_app_26q1",
-    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "nowplaying_app_26q1.xml",
@@ -480,7 +479,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "satellite_sos",
-    enabled: false,
     product_specific: true,
     sub_dir: "sysconfig",
     src: "satellite_sos.xml",

@@ -56,7 +56,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "default-permissions_nowplaying",
-    enabled: false,
     product_specific: true,
     sub_dir: "default-permissions",
     src: "default-permissions_nowplaying.xml",
@@ -121,7 +120,6 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "default-permissions-stargate",
-    enabled: false,
     product_specific: true,
     sub_dir: "default-permissions",
     src: "default-permissions-stargate.xml",
